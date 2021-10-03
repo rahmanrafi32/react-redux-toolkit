@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import MovieListing from "../MovieListnig/MovieListing";
 import {useDispatch} from "react-redux";
-import {fetchAsyncMovies} from "../../features/Movies/MovieSlice";
+import {fetchAsyncMovies,fetchAsyncShows} from "../../features/Movies/MovieSlice";
 
 const Home = () => {
 
@@ -9,6 +9,7 @@ const Home = () => {
 
     useEffect(() => {
        dispatch(fetchAsyncMovies())
+       dispatch(fetchAsyncShows())
     }, [dispatch]);
     return (
         <div className={"banner-name"}>

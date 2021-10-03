@@ -14,3 +14,18 @@
   grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
   grid-gap: 15px;
 }
+
+.show-list{
+  margin: 20px;
+  h2{
+    color:$font-secondary;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+}
+
+.show-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-gap: 15px;
+}
